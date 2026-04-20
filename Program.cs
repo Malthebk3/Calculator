@@ -8,21 +8,21 @@ namespace Csharp_Programming_Examples
 {
     internal class calculator
     {
-        static int tal1, tal2,choice;
+        static double tal1, tal2;
         static void Main(string[] args)
         {
             float c;
             Console.WriteLine("==========Calculator==========");
             Console.WriteLine("\n Enter your first Number");
-            tal1 = Convert.ToInt32(Console.ReadLine());
+            tal1 = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("\n Enter your second Number");
-            tal2 = Convert.ToInt32(Console.ReadLine());
+            tal2 = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Please select any below");
             Console.WriteLine("1. Addition");
             Console.WriteLine("2. Subtraction");
             Console.WriteLine("3. Multiply");
             Console.WriteLine("4. Divided");
-            choice = Convert.ToInt32(Console.ReadLine());
+            int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
             {
                 case 1:
