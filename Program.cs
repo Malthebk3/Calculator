@@ -8,9 +8,9 @@ namespace Csharp_Programming_Examples
 {
     internal class calculator
     {
+        static int tal1, tal2,choice;
         static void Main(string[] args)
         {
-            int tal1, tal2,choice;
             float c;
             Console.WriteLine("==========Calculator==========");
             Console.WriteLine("\n Enter your first Number");
@@ -25,16 +25,16 @@ namespace Csharp_Programming_Examples
             choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
             {
-                case 0:
+                case 1:
                     Plus();
                     break;
-                case 1:
+                case 2:
                     Minus();
                     break;
-                case 2:
+                case 3:
                     Multiply();
                     break;
-                case 3:
+                case 4:
                     Divide();
                     break;
                 default:
@@ -43,19 +43,19 @@ namespace Csharp_Programming_Examples
             }
 
         }
-        void Plus()
+        static void Plus()
         {
             Console.WriteLine($"{tal1} + {tal2} = {tal1 + tal2}");
         }
-        void Minus()
+        static void Minus()
         {
             Console.WriteLine($"{tal1} - {tal2} = {tal1 - tal2}");
         }
-        void Multiply()
+        static void Multiply()
         {
             Console.WriteLine($"{tal1} * {tal2} = {tal1 * tal2}");
         }
-        void Divide()
+        static void Divide()
         {
             Console.WriteLine($"{tal1} / {tal2} = {tal1 / tal2}");
         }
