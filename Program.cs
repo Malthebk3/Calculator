@@ -23,11 +23,42 @@ namespace Csharp_Programming_Examples
             Console.WriteLine("3. Multiply");
             Console.WriteLine("4. Divided");
             choice = Convert.ToInt32(Console.ReadLine());
+            switch (choice)
+            {
+                case 0:
+                    Plus();
+                    break;
+                case 1:
+                    Minus();
+                    break;
+                case 2:
+                    Multiply();
+                    break;
+                case 3:
+                    Divide();
+                    break;
+                default:
+                    Console.WriteLine("Invalid Input");
+                    break;
+            }
 
         }
-
-
+        void Plus()
+        {
+            Console.WriteLine($"{tal1} + {tal2} = {tal1 + tal2}");
+        }
+        void Minus()
+        {
+            Console.WriteLine($"{tal1} - {tal2} = {tal1 - tal2}");
+        }
+        void Multiply()
+        {
+            Console.WriteLine($"{tal1} * {tal2} = {tal1 * tal2}");
+        }
+        void Divide()
+        {
+            Console.WriteLine($"{tal1} / {tal2} = {tal1 / tal2}");
+        }
     }
 
 }
-
